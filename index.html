@@ -2,207 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#120b12">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0e0a10">
 <title>For Akanksha — From Suraj</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
-
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  min-height:100vh;
-  background:#100a10;
-  color:#f8edf3;
-  font-family:Montserrat,Arial,sans-serif;
-  overflow-x:hidden;
-}
-body:before{
-  content:"";
-  position:fixed;inset:0;pointer-events:none;opacity:.18;
-  background:radial-gradient(circle at 50% 10%,#b85c82 0,transparent 28%),
-             radial-gradient(circle at 10% 80%,#653d59 0,transparent 25%);
-}
-.page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-.card{
-  width:min(440px,100%);
-  position:relative;
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:28px;
-  background:rgba(27,16,26,.86);
-  box-shadow:0 25px 80px rgba(0,0,0,.45);
-  overflow:hidden;
-}
-.screen{display:none;padding:34px 24px 30px;min-height:720px;align-items:center;justify-content:center;flex-direction:column;text-align:center}
-.screen.active{display:flex}
-.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase;opacity:.65;margin-bottom:12px}
-h1,h2{font-family:"Cormorant Garamond",serif;font-weight:600;margin:0}
-h1{font-size:58px;line-height:.92}
-h2{font-size:40px;line-height:1.02}
-.sub{font-size:13px;line-height:1.7;color:#d8c6cf;max-width:330px;margin:18px auto 26px}
-button{
-  border:0;cursor:pointer;font:600 12px Montserrat,sans-serif;
-  letter-spacing:1.2px;text-transform:uppercase;
-  padding:14px 22px;border-radius:999px;
-  color:#24121c;background:#f5dce7;
-  box-shadow:0 10px 25px rgba(0,0,0,.22);
-  transition:.2s transform,.2s box-shadow,.2s background;
-}
-button:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,.3)}
-.ghost{background:transparent;color:#efd9e4;border:1px solid rgba(255,255,255,.18)}
-.heart{
-  width:100px;height:100px;border-radius:50%;margin:12px auto 22px;
-  display:grid;place-items:center;font-size:42px;
-  background:rgba(245,220,231,.08);
-  border:1px solid rgba(245,220,231,.18);
-  animation:pulse 1.8s infinite;
-}
-@keyframes pulse{50%{transform:scale(1.06);box-shadow:0 0 35px rgba(231,134,174,.15)}}
-.photo{
-  width:100%;height:210px;object-fit:cover;border-radius:20px;
-  border:1px solid rgba(255,255,255,.12);
-  box-shadow:0 16px 40px rgba(0,0,0,.35);
-}
-.photo.tall{height:270px;object-position:center 35%}
-.caption{font-family:"Cormorant Garamond",serif;font-size:25px;margin:16px 0 6px}
-.small{font-size:11px;color:#bfaeb8;line-height:1.6}
-.letter{
-  text-align:left;background:#f7edf0;color:#35242c;border-radius:20px;
-  padding:26px 22px;box-shadow:0 18px 45px rgba(0,0,0,.3);
-  margin-top:18px;
-}
-.letter .to{font-family:"Cormorant Garamond",serif;font-size:28px;margin-bottom:14px}
-.letter p{font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.55;margin:10px 0}
-.signature{text-align:right;font-family:"Cormorant Garamond",serif;font-size:22px;margin-top:18px}
-.meter{
-  width:100%;height:12px;border-radius:20px;background:#35232e;overflow:hidden;margin:22px 0 10px;
-}
-.bar{height:100%;width:0;background:linear-gradient(90deg,#c56a91,#f2b5cc);transition:1.1s ease}
-.percent{font-family:"Cormorant Garamond",serif;font-size:44px}
-.choice-row{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
-.footer{font-size:9px;letter-spacing:1.8px;opacity:.4;margin-top:26px;text-transform:uppercase}
-.float{
-  position:fixed;bottom:-30px;font-size:16px;opacity:0;
-  animation:floatUp 5s linear forwards;pointer-events:none;
-}
-@keyframes floatUp{0%{transform:translateY(0) scale(.7);opacity:0}15%{opacity:.6}100%{transform:translateY(-110vh) translateX(var(--drift)) scale(1.2);opacity:0}}
-.dots{display:flex;gap:6px;margin-top:22px}
-.dot{width:5px;height:5px;border-radius:50%;background:#59414d}
-.dot.on{background:#efb0c9}
-</style>
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#0c080d;color:#fff0f5;font-family:Montserrat,Arial,sans-serif}body{overflow:hidden;background:radial-gradient(circle at 50% 0,#3a1828 0,transparent 38%),#0c080d}.wrap{height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}.card{width:min(460px,100%);height:min(820px,calc(100vh - 36px));position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.13);border-radius:30px;background:rgba(19,12,19,.94);box-shadow:0 30px 90px rgba(0,0,0,.55)}.screen{position:absolute;inset:0;padding:34px 25px 76px;display:none;overflow:auto;align-items:center;justify-content:center;flex-direction:column;text-align:center}.screen.active{display:flex;animation:in .45s ease}.screen::-webkit-scrollbar{width:4px}.screen::-webkit-scrollbar-thumb{background:#70475a;border-radius:10px}@keyframes in{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}h1,h2,h3{font-family:'Cormorant Garamond',serif;margin:0;font-weight:600}h1{font-size:62px;line-height:.9}h2{font-size:42px;line-height:1}.kicker{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#cdb9c4;margin-bottom:14px}.sub{max-width:340px;color:#cbb8c2;font-size:13px;line-height:1.75;margin:18px auto 26px}.heart{font-size:52px;width:110px;height:110px;border-radius:50%;display:grid;place-items:center;background:rgba(255,190,215,.07);border:1px solid rgba(255,190,215,.18);margin:10px auto 24px;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.06);box-shadow:0 0 45px rgba(255,110,170,.13)}}button{border:0;border-radius:999px;padding:14px 22px;font:700 11px Montserrat,sans-serif;letter-spacing:1.4px;text-transform:uppercase;cursor:pointer;background:#f4dbe6;color:#29151f;box-shadow:0 10px 28px rgba(0,0,0,.28);transition:.2s}button:hover{transform:translateY(-2px)}button.ghost{background:transparent;color:#f3dce6;border:1px solid rgba(255,255,255,.18);box-shadow:none}.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.photo{width:100%;max-height:340px;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 45px rgba(0,0,0,.4)}.caption{font:600 28px 'Cormorant Garamond',serif;margin:18px 0 7px}.small{font-size:11px;line-height:1.7;color:#ad9ca6;max-width:340px}.quote{font:600 31px 'Cormorant Garamond',serif;line-height:1.18;margin:18px 0}.letter{width:100%;text-align:left;background:#f8eef2;color:#35252c;border-radius:22px;padding:25px 22px;box-shadow:0 20px 50px rgba(0,0,0,.3)}.letter .to{font:600 28px 'Cormorant Garamond',serif;margin-bottom:10px}.letter p{font:500 18px/1.5 'Cormorant Garamond',serif;margin:9px 0}.sig{text-align:right;font:600 23px 'Cormorant Garamond',serif;margin-top:16px}.list{width:100%;display:grid;gap:10px;margin:16px 0}.item{padding:15px 16px;border:1px solid rgba(255,255,255,.11);border-radius:17px;background:rgba(255,255,255,.035);text-align:left;font-size:12px;line-height:1.55}.item b{display:block;color:#f5d9e4;margin-bottom:4px}.meter{width:100%;height:13px;background:#30202a;border-radius:20px;overflow:hidden;margin:18px 0 7px}.fill{height:100%;width:0;background:linear-gradient(90deg,#b65c82,#f1b0c9);transition:1s}.score{font:600 28px 'Cormorant Garamond',serif}.check{font-size:50px;margin:5px}.tiny{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#9f8c97}.nav{position:absolute;left:0;right:0;bottom:16px;display:flex;justify-content:center;gap:8px;z-index:10}.nav button{padding:10px 15px;font-size:10px}.dots{position:absolute;top:14px;left:0;right:0;text-align:center;z-index:10}.dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#6e5360;margin:0 3px}.dot.on{background:#f0bfd1;box-shadow:0 0 8px #f0bfd1}.floating{position:absolute;inset:0;pointer-events:none;overflow:hidden}.floating span{position:absolute;bottom:-30px;opacity:.35;animation:float 8s linear infinite;font-size:16px}@keyframes float{to{transform:translateY(-900px) rotate(30deg);opacity:0}}.hidden{display:none!important}.final{background:radial-gradient(circle at 50% 45%,rgba(180,72,120,.18),transparent 45%)}.divider{width:55px;height:1px;background:#745363;margin:15px auto}.reason{font-size:12px;color:#d1bec7;line-height:1.7}.footer-note{font-size:9px;color:#76636e;margin-top:14px}
+</style></head>
 <body>
-<main class="page">
-  <section class="card">
-
-    <div class="screen active" id="s1">
-      <div class="kicker">A little something from Suraj</div>
-      <div class="heart">♡</div>
-      <h1>For<br>Akanksha</h1>
-      <p class="sub">There is something I should have said properly.</p>
-      <button onclick="next()">Open this</button>
-      <div class="footer">tap to continue</div>
-    </div>
-
-    <div class="screen" id="s2">
-      <div class="kicker">Before anything else</div>
-      <img class="photo tall" src="assets/photo1.jpg" alt="A memory of Suraj and Akanksha">
-      <div class="caption">Some memories are worth keeping.</div>
-      <p class="small">And some mistakes are worth owning.</p>
-      <button onclick="next()">Continue</button>
-    </div>
-
-    <div class="screen" id="s3">
-      <div class="kicker">No excuses</div>
-      <h2>I'm sorry.</h2>
-      <div class="letter">
-        <div class="to">Akanksha,</div>
-        <p>Mujhse guess mein mazaak-mazaak mein bahut kuch bol diya gaya. Shayad us waqt mujhe laga hoga ki bas fun hai, lekin jo baat tumhe hurt kare, usse sirf “mazaak” bol dena excuse nahi hota.</p>
-        <p>I know I could have handled it better. Isliye bina excuses ke — <b>I'm genuinely sorry.</b></p>
-        <p>Mera intention tumhe hurt karna nahi tha, but intention se zyada important impact hota hai. Aur agar meri baaton se tumhe bura laga, then I understand why.</p>
-        <p>Bas itna kehna tha: <b>please forgive me if you can.</b> ❤️</p>
-        <div class="signature">— Suraj</div>
-      </div>
-      <button onclick="next()">One last thing</button>
-    </div>
-
-    <div class="screen" id="s4">
-      <div class="kicker">Forgiveness meter</div>
-      <h2>How much<br>am I forgiven?</h2>
-      <div class="percent" id="percent">0%</div>
-      <div class="meter"><div class="bar" id="bar"></div></div>
-      <p class="small" id="meterText">Waiting for Akanksha's decision...</p>
-      <button onclick="forgive()">I'm feeling generous</button>
-      <div class="footer">No pressure. Your call.</div>
-    </div>
-
-    <div class="screen" id="s5">
-      <div class="kicker">Okay... peace treaty?</div>
-      <img class="photo" src="assets/photo2.jpg" alt="Another memory">
-      <h2 style="margin-top:20px">Truce accepted. ❤️</h2>
-      <p class="sub">No more unnecessary arguments. No more “I was just joking” excuses. Just better communication.</p>
-      <button onclick="next()">Seal it</button>
-    </div>
-
-    <div class="screen" id="s6">
-      <div class="heart">♥</div>
-      <div class="kicker">Peace treaty</div>
-      <h2>Signed.</h2>
-      <p class="sub">Suraj officially apologizes to Akanksha and promises to think twice before saying something stupid again.</p>
-      <div class="choice-row">
-        <button onclick="hearts()">Deal ❤️</button>
-        <button class="ghost" onclick="hearts()">Okay, idiot 😭</button>
-      </div>
-      <div class="footer">Made with one apology & a lot of courage</div>
-    </div>
-
-    <div class="dots" id="dots" style="position:absolute;bottom:13px;left:50%;transform:translateX(-50%)">
-      <span class="dot on"></span><span class="dot"></span><span class="dot"></span>
-      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-    </div>
-  </section>
-</main>
-
+<div class="wrap"><main class="card"><div class="floating"><span style="left:8%;animation-delay:0s">♡</span><span style="left:22%;animation-delay:2s">♥</span><span style="left:78%;animation-delay:4s">♡</span><span style="left:91%;animation-delay:1s">♥</span></div>
+<div class="dots" id="dots"></div>
+<section class="screen active"><div class="heart">♡</div><div class="kicker">a little something from Suraj</div><h1>For<br>Akanksha</h1><p class="sub">Not a big speech. Not an excuse. Just something I wanted to say properly.</p><button onclick="go(1)">Open this →</button></section>
+<section class="screen"><div class="kicker">01 / 10</div><h2>First, this.</h2><div class="divider"></div><p class="quote">“I know you're angry. And honestly, I understand why.”</p><p class="sub">So this time, I'm not going to make the situation smaller by calling it a joke.</p><button onclick="go(2)">Keep reading →</button></section>
+<section class="screen"><div class="kicker">02 / 10</div><img class="photo" src="assets/photo1.jpg" alt="A memory"><div class="caption">Some moments matter.</div><p class="small">And that's exactly why I don't want one bad moment to be the only thing remembered.</p><button onclick="go(3)">Next →</button></section>
+<section class="screen"><div class="kicker">03 / 10</div><h2>What actually happened</h2><div class="list"><div class="item"><b>What happened</b>Guessing ke time gusse mein maine tumse bahut kuch bol diya.</div><div class="item"><b>What I realise now</b>Gusse mein bola hua bhi hurt kar sakta hai. “I was angry” uska excuse nahi hai.</div><div class="item"><b>What I'm saying now</b>I should have handled my anger better. I'm sorry.</div></div><button onclick="go(4)">Next →</button></section>
+<section class="screen"><div class="kicker">04 / 10</div><div class="letter"><div class="to">Akanksha,</div><p>Mujhse gusse mein guess ke time bahut kuch bol diya gaya. Shayad us moment mein main apne words ko control nahi kar paya, but that doesn't make those words okay.</p><p>Mujhe pata hai sirf “sorry” bol dene se jo bura laga woh instantly disappear nahi hota.</p><p>Isliye main excuse nahi banaunga. <b>I'm genuinely sorry.</b></p><p>Bas itna chahta hoon ki jab tum ready ho, meri apology ko ek baar consider karna.</p><div class="sig">— Suraj</div></div><button onclick="go(5)">Next →</button></section>
+<section class="screen"><div class="kicker">05 / 10</div><h2>Things I should've done</h2><div class="list"><div class="item">🫶 <b>Listen first.</b> Tum gusse mein ho toh pehle sunna chahiye tha.</div><div class="item">🧠 <b>Think before speaking.</b> Gussa temporary tha; words ka effect longer ho sakta hai.</div><div class="item">🤝 <b>Own it.</b> Galti ko “mazaak” ya “gussa tha” bolkar dodge nahi karna chahiye.</div></div><button onclick="go(6)">Next →</button></section>
+<section class="screen"><div class="kicker">06 / 10</div><h2>Apology meter</h2><p class="sub">No pressure. Just a tiny dramatic meter because this is still a website 😭</p><div class="meter"><div class="fill" id="fill"></div></div><div class="score" id="score">0% sorry</div><button onclick="boost()">Make it 100%</button><p class="footer-note">(The apology was 100% serious from the beginning.)</p><button class="ghost" onclick="go(7)">Continue →</button></section>
+<section class="screen"><div class="kicker">07 / 10</div><img class="photo" src="assets/photo2.jpg" alt="Another memory"><div class="caption">One bad moment ≠ everything.</div><p class="small">I'm not asking you to forget what happened. I'm just asking for the chance to make things right.</p><button onclick="go(8)">Next →</button></section>
+<section class="screen"><div class="kicker">08 / 10</div><h2>One small promise</h2><div class="item" style="margin:20px 0;text-align:center"><b>Next time I'm angry…</b>I’ll pause before saying things I might regret.</div><p class="sub">No dramatic promises. Just one simple thing I can actually try to do better.</p><button onclick="go(9)">One last page →</button></section>
+<section class="screen"><div class="kicker">09 / 10</div><div class="check">♡</div><h2>Peace treaty?</h2><p class="sub">No pressure to answer immediately. Take your time. If you forgive me, I'll be grateful. If you're still angry, I understand that too.</p><div class="row"><button onclick="accept()">Okay, truce ❤️</button><button class="ghost" onclick="stillMad()">Still angry 😭</button></div><p id="reply" class="small hidden"></p></section>
+<section class="screen final"><div class="heart">♥</div><div class="kicker">10 / 10 · final page</div><h2>Peace treaty.</h2><div class="divider"></div><p class="quote">“I'm sorry, Akanksha.”</p><p class="sub">Whatever happens next, I wanted you to know that I meant the apology. ❤️</p><div class="tiny">Signed: Suraj</div><p class="footer-note">End of the website. Hopefully not the conversation. :)</p></section>
+<div class="nav"><button class="ghost" id="back" onclick="prev()">← Back</button><button class="ghost" id="home" onclick="go(0)">Start</button><button id="next" onclick="next()">Next →</button></div>
+</main></div>
 <script>
-let current=1;
-const total=6;
-function show(n){
-  document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));
-  document.getElementById('s'+n).classList.add('active');
-  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===n-1));
-  current=n;
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-function next(){ if(current<total) show(current+1); }
-function forgive(){
-  const bar=document.getElementById('bar');
-  const percent=document.getElementById('percent');
-  const text=document.getElementById('meterText');
-  let p=0;
-  const timer=setInterval(()=>{
-    p+=2;
-    bar.style.width=p+'%';
-    percent.textContent=p+'%';
-    if(p>=100){
-      clearInterval(timer);
-      text.textContent='Okay... that looks promising. 🥹';
-      setTimeout(()=>next(),700);
-    }
-  },18);
-}
-function hearts(){
-  for(let i=0;i<22;i++){
-    const el=document.createElement('div');
-    el.className='float';
-    el.textContent=['♥','♡','✦','·'][Math.floor(Math.random()*4)];
-    el.style.left=Math.random()*100+'vw';
-    el.style.setProperty('--drift',(Math.random()*160-80)+'px');
-    el.style.animationDelay=(Math.random()*.5)+'s';
-    document.body.appendChild(el);
-    setTimeout(()=>el.remove(),5500);
-  }
-}
-</script>
-</body>
-</html>
+let page=0;const screens=[...document.querySelectorAll('.screen')];const dots=document.getElementById('dots');
+for(let i=0;i<screens.length;i++){let d=document.createElement('i');d.className='dot'+(i===0?' on':'');dots.appendChild(d)}
+function go(n){page=Math.max(0,Math.min(screens.length-1,n));screens.forEach((s,i)=>s.classList.toggle('active',i===page));[...dots.children].forEach((d,i)=>d.classList.toggle('on',i===page));document.getElementById('back').style.visibility=page?'visible':'hidden';document.getElementById('home').style.visibility=page?'visible':'hidden';document.getElementById('next').style.visibility=page===screens.length-1?'hidden':'visible';document.getElementById('next').textContent=page===screens.length-2?'Finish →':'Next →';if(page===6){setTimeout(()=>{document.getElementById('fill').style.width='100%'},100)}window.scrollTo(0,0)}
+function next(){if(page<screens.length-1)go(page+1)}function prev(){if(page>0)go(page-1)}function boost(){document.getElementById('fill').style.width='100%';document.getElementById('score').textContent='100% sorry ❤️'}function accept(){const r=document.getElementById('reply');r.textContent='Truce noted. ❤️';r.classList.remove('hidden');setTimeout(()=>go(9),700)}function stillMad(){const r=document.getElementById('reply');r.textContent='Fair enough. Take your time. No pressure. ❤️';r.classList.remove('hidden')}
+go(0);
+</script></body></html>
